@@ -52,11 +52,10 @@ public class MinStack {
     }
 
     public void pop() {
-        int o = originalStack.peek();
+        int o = originalStack.pop();
         int m = minStack.peek();
         if(o == m)
             minStack.pop();
-        originalStack.pop();
     }
 
     public int top() {
